@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Sederhana - Laverna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Laverna</h1>
+    </header>
+
+    <footer>
+      <p>&copy; 2024 Laverna. Semua hak dilindungi.</p>
+    </footer>
+
+   <nav class="navbar">
+      <ul>
+
+        <li class="nav-item" onclick="showInfo('home')">Home</li>
+        <li class="nav-item"onclick="showInfo('about')">About</li>
+        <li class="nav-item"onclick="showInfo('contact')">Contact</li>
+
+      </ul> 
+    </nav>
+
+    <div class="slideshow">
+    <div class="slide active">
+        <img
+          src="https://res.cloudinary.com/dualj00zf/image/upload/v1730517739/rose-4312900_1280_ueechx.jpg"
+          style="width: 100%">
+    </div>
+    </div>
+      <div class="slide">
+        <img
+          src="https://res.cloudinary.com/dualj00zf/image/upload/v1730518958/lofoten-8608176_640_dc6dnv.jpg"
+          style="width: 100%">
+    </div>
+    </div>
+     <div class="slide">
+        <img
+          src="https://res.cloudinary.com/dualj00zf/image/upload/v1730518958/06-33-35-770_1440x550_hqhyg4.jpg"
+          style="width: 100%">
+
+      </div>
+    
+  </div>
+     <div class="content">
+     <div class="column" onclick="showArticle('article1')">
+          <img src="https://res.cloudinary.com/dualj00zf/image/upload/v1730618093/ai-generated-8552082_1280_uwqw5e.jpg" alt="Artikel 1">
+         <p>The Curse op Aldegrove</p>
+     <div class="column" onclick="showArticle('article2')">
+         <img src="https://res.cloudinary.com/dualj00zf/image/upload/v1730617289/high-heel-7691651_1280_monu9v.jpg" alt="Artikel 2">  
+         <p>Artikel 2</p>
+     <div class="column" onclick="showArticle('article3')">
+         <img src="https://res.cloudinary.com/dualj00zf/image/upload/v1730517739/rose-4312900_1280_ueechx.jpg" alt="Artikel 3">
+         <p>Artikel 3</p>     
+  </div>
+</div>
+
+ <div id="article-display" class="article-display"></div>
+
+ <footer>
+      <p>&copy; 2024 Laverna. Semua hak dilindungi.</p>
+ </footer>  
+
+
+    <script src="script.js"></script>
+</body>    
+</html>
+

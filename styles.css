@@ -1,0 +1,138 @@
+body {
+  font-family: Verdana, monospace;
+  margin: 0;
+  background-color: rgba(58, 5, 16, 0.973);
+}
+
+header {
+  background: hsla(0, 100%, 40%, 0.432);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar {
+  background-color: darkred;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  color: aliceblue;
+  text-align: center;
+  font-family: cursive;
+  padding: 14px 20px;
+  text-decoration: none;
+  flex: 1;
+}
+
+.nav-item:hover {
+  background-color: brown;
+}
+
+.content {
+  padding: 20px;
+}
+
+.slideshow {
+  margin-bottom: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+  position: absolute;
+  width: 100%;
+  height: 400%;
+  overflow: hidden;
+}
+
+.article-images {
+  margin-top: 20px;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.mySlides {
+  display: none;
+  animation: fade 1.5s;
+}
+
+.column {
+  width: 40%;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  background-color: ghostwhite;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    background: darkred;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform 0, 2s, box-shadow 0, 2s;
+    cursor: pointer;
+  }
+  .column img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
+.column:hover {
+  transform: scale(1.05);
+}
+
+.column.active {
+  box-shadow: 0 0 20px rgba(253, 8, 8, 0.981);
+  background-color: rgba(253, 8, 8, 0.973);
+}
+
+.article-display {
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 100px;
+}
+
